@@ -1,36 +1,25 @@
 [
   {
-    "customer_id": "C001",
-    "name": "Rohan Mehta",
-    "email": "rohan@gmail.com",
-    "city": "Mumbai",
-    "orders": [
-      {
-        "order_id": "ORD1114",
-        "product": "Pen Set",
-        "quantity": 2,
-        "total": 500
-      },
-      {
-        "order_id": "ORD1091",
-        "product": "Standing Desk",
-        "quantity": 3,
-        "total": 66000
-      }
-    ]
+    "product_id": "P_ELEC_001",
+    "name": "Gaming Laptop",
+    "category": "Electronics",
+    "price": 75000,
+    "specs": { "warranty": "2 years", "voltage": "220V", "processor": "i7" },
+    "tags": ["high-performance", "gaming"]
   },
   {
-    "customer_id": "C002",
-    "name": "Priya Sharma",
-    "email": "priya@gmail.com",
-    "city": "Delhi",
-    "orders": [
-      {
-        "order_id": "ORD1027",
-        "product": "Notebook",
-        "quantity": 4,
-        "total": 480
-      }
-    ]
+    "product_id": "P_CLOT_002",
+    "name": "Cotton T-Shirt",
+    "category": "Clothing",
+    "price": 1200,
+    "specs": { "size": "L", "material": "100% Cotton", "color": "Blue" }
+  },
+  {
+    "product_id": "P_GROC_003",
+    "name": "Whole Wheat Bread",
+    "category": "Groceries",
+    "price": 50,
+    "expiry_date": "2024-12-25",
+    "nutrition": { "calories": 250, "vegan": true }
   }
 ]

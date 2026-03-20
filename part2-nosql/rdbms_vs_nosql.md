@@ -1,20 +1,16 @@
-\## RDBMS vs NoSQL Reflection
+\## Database Recommendation
 
 
 
-\### 1. Flexibility
-
-RDBMS (SQL) requires a strict schema. If I want to add a "Middle Name" to a customer, I have to alter the whole table. In NoSQL, I can just add that field to one document without affecting others.
+For a patient management system, I recommend \*\*MySQL (RDBMS)\*\*. Healthcare data requires high integrity and consistency, which is guaranteed by \*\*ACID compliance\*\* (Atomicity, Consistency, Isolation, Durability). Ensuring that a patient's medication record or surgery schedule is never partially updated or lost is critical. MySQL's rigid schema ensures that every patient record follows the same structure, reducing errors.
 
 
 
-\### 2. Relationships
-
-RDBMS is better for complex relationships (like linking Sales Reps to Orders) because it uses Joins. NoSQL is better for "Nested" data where everything about a customer is in one place.
+In contrast, MongoDB follows \*\*BASE\*\* (Basically Available, Soft state, Eventual consistency), which prioritizes speed and availability over immediate consistency. While MongoDB is great for flexible data, "eventual consistency" is a risk in medical environments where data must be accurate across all systems instantly.
 
 
 
-\### 3. Scaling
+\*\*Would my answer change for a Fraud Detection module?\*\*
 
-NoSQL is generally easier to scale across multiple servers for massive amounts of data, whereas RDBMS is best for maintaining "Perfect" data integrity.
+Yes. For fraud detection, \*\*MongoDB\*\* might be superior. Fraud detection requires analyzing massive amounts of high-velocity, polymorphic data (different types of transaction patterns) in real-time. MongoDB’s horizontal scaling and flexible schema allow it to ingest diverse data points (location, device ID, IP address) quickly, which is more important for identifying patterns than the strict relational structure of MySQL.
 
