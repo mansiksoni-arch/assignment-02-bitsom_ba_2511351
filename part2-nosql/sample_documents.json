@@ -1,0 +1,36 @@
+[
+  {
+    "customer_id": "C001",
+    "name": "Rohan Mehta",
+    "email": "rohan@gmail.com",
+    "city": "Mumbai",
+    "orders": [
+      {
+        "order_id": "ORD1114",
+        "product": "Pen Set",
+        "quantity": 2,
+        "total": 500
+      },
+      {
+        "order_id": "ORD1091",
+        "product": "Standing Desk",
+        "quantity": 3,
+        "total": 66000
+      }
+    ]
+  },
+  {
+    "customer_id": "C002",
+    "name": "Priya Sharma",
+    "email": "priya@gmail.com",
+    "city": "Delhi",
+    "orders": [
+      {
+        "order_id": "ORD1027",
+        "product": "Notebook",
+        "quantity": 4,
+        "total": 480
+      }
+    ]
+  }
+]
